@@ -1,5 +1,9 @@
+body {
+  margin: 0;
+}
+
 header {
-  padding-bottom: 400px;
+  padding-bottom: 200px;
 }
 
 header * {
@@ -9,14 +13,55 @@ header * {
   align-items: center;
 }
 
-h1 {
-  margin: 0 15px;
+header p {
+  margin: 200px 300px 45px 300px;
+  display: block;
+  text-align: center;
+  font-family: "comic sans MS";
+  font-size: 19px;
+  color: white;
 }
 
-h2 {
-  align-content: center;
+header h1 {
+  margin: 0 15px;
+  text-align: center;
+}
+
+nav {
+  /* align-items: center; */
+  padding-top: 25px;
 }
 
 nav button {
   margin: 0 45px;
+}
+
+main {
+  background-color: midnightblue;
+  padding-bottom: 300px;
+}
+
+main * {
+  display: flex;
+}
+
+main h1 {
+  margin: 0;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+main ul {
+  margin: 0;
+  padding: 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 60px repeat(5, 1fr) 60px;
+}
+
+main li {
+  margin: 0;
+  padding: 0;
 }
