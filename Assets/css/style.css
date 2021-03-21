@@ -43,6 +43,8 @@ main {
 
 main * {
   display: flex;
+  justify-items: center;
+  justify-content: center;
 }
 
 main h1 {
@@ -54,11 +56,28 @@ main h1 {
 main ul {
   margin: 0;
   padding: 0;
+  justify-content: center;
+}
+
+main section {
+  display: grid;
+  justify-content: center;
+}
+
+#bigimage {
+  margin: 0 0;
+  padding: 40px 0;
+  justify-self: center;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: 60px repeat(5, 1fr) 60px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 60px;
+}
+
+section li {
 }
 
 main li {
