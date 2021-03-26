@@ -1,0 +1,34 @@
+:root {
+ --header-footer-color: grey;
+}
+
+header {
+ background-color: var(--header-footer-color);
+}
+
+#about-me {
+ background-color: blue;
+}
+
+#projects {
+ background-color: orange;
+}
+
+#contact-me {
+ background-color: teal;
+}
+
+footer {
+ background-color: var(--header-footer-color);
+}
+
+@media screen and (min-width: 768px) {
+ header {
+  background-color: black;
+ }
+}
+@media screen and (min-width: 1024px) {
+ header {
+  background-color: yellow;
+ }
+}
