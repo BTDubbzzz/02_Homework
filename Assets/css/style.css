@@ -4,29 +4,76 @@
 
 header {
  background-color: var(--header-footer-color);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+header li {
+ display: flex;
+ justify-content: center;
 }
 
 #about-me {
  background-color: blue;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+#about-me p {
+ margin: 5rem;
+ text-align: center;
 }
 
 #projects {
  background-color: orange;
 }
 
+#projects h2 {
+ text-align: center;
+}
+
+#featured-project {
+ display: block;
+ width: 100%;
+ max-width: 400px;
+ height: auto;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 20px 0;
+}
+
+#projects ul {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: auto;
+}
+
+figcaption {
+ text-align: center;
+}
+
 #contact-me {
  background-color: teal;
+ display: flex;
+ justify-content: space-between;
+}
+
+.responsive {
+ display: block;
+ width: 100%;
+ max-width: 200px;
+ height: auto;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 footer {
  background-color: var(--header-footer-color);
+ text-align: center;
 }
 
-@media screen and (min-width: 768px) {
- header {
-  background-color: black;
- }
-}
 @media screen and (min-width: 1024px) {
  header {
   background-color: yellow;
