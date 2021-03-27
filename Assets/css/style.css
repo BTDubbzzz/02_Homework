@@ -2,6 +2,15 @@
  --header-footer-color: grey;
 }
 
+#profile-pic {
+ display: flex;
+ justify-self: center;
+ align-self: center;
+ border: 2px solid green;
+ border-radius: 125px;
+ margin-top: 20px;
+}
+
 header {
  background-color: var(--header-footer-color);
  display: flex;
@@ -28,12 +37,17 @@ header h2 {
 }
 
 main {
- margin-top: 200px;
+ margin-top: 150px;
 }
 
 main h2 {
  font-weight: bolder;
  font-size: larger;
+ text-transform: uppercase;
+ padding-top: 20px;
+ padding-left: 25px;
+ padding-right: 25px;
+ border-bottom: 3px solid black;
 }
 
 header li {
@@ -54,6 +68,8 @@ header li {
 #about-me p {
  margin: 5rem;
  text-align: center;
+ border-left: 1px solid black;
+ border-right: 1px solid black;
 }
 
 #projects {
@@ -108,5 +124,11 @@ footer {
 @media screen and (min-width: 1024px) {
  header {
   background-color: yellow;
+ }
+
+ #about-me p {
+  max-width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
  }
 }
