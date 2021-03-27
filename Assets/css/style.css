@@ -1,12 +1,22 @@
 :root {
- --header-footer-color: grey;
+ --header-footer-color: #4e4e4e;
+}
+
+p,
+figcaption {
+ color: rgb(212, 212, 212);
+}
+
+h1,
+h2 {
+ color: seagreen;
 }
 
 #profile-pic {
  display: flex;
  justify-self: center;
  align-self: center;
- border: 2px solid green;
+ border: 2px solid seagreen;
  border-radius: 125px;
  margin-top: 20px;
 }
@@ -59,7 +69,7 @@ header li {
 }
 
 #about-me {
- background-color: blue;
+ background-color: #5a5757;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -73,7 +83,7 @@ header li {
 }
 
 #projects {
- background-color: orange;
+ background-color: #3f423f;
 }
 
 #projects h2 {
@@ -87,7 +97,7 @@ header li {
  height: auto;
  margin-left: auto;
  margin-right: auto;
- padding: 20px 0;
+ margin-top: 20px;
 }
 
 #projects ul {
@@ -96,15 +106,33 @@ header li {
  grid-template-rows: auto;
 }
 
+figure {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-items: center;
+}
+
+figure img {
+ border: 2px solid seagreen;
+ min-height: 100px;
+ max-height: 120px;
+}
+
 figcaption {
- text-align: center;
  padding-bottom: 20px;
+ text-align: center;
+ max-width: 70%;
 }
 
 #contact-me {
- background-color: teal;
+ background-color: #555855;
  display: block;
  text-align: center;
+}
+
+#contact-me p {
+ padding: 10px 0;
 }
 
 .responsive {
@@ -119,16 +147,20 @@ figcaption {
 footer {
  background-color: var(--header-footer-color);
  text-align: center;
+ padding-top: 15px;
 }
 
 @media screen and (min-width: 1024px) {
  header {
-  background-color: yellow;
  }
 
  #about-me p {
   max-width: 50%;
   padding-left: 5px;
   padding-right: 5px;
+ }
+
+ figcaption {
+  max-width: 35%;
  }
 }
