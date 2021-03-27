@@ -11,7 +11,7 @@ The deployed website can be accessed at the below link.
 
 https://btdubbzzz.github.io/Portfolio-Website/
 
-## Release History
+## Process / What I learned
 
 Feel free to go through each commit, but the gist is that I started without mobile-first design in mind. Realized a couple days into my project that it was going to be a nightmare to try and reformat down to mobile. So I started over late in the process to focus on mobile-first. I think I learned a good lesson from this project even though it certainly isn't my best work and I do not plan to use it as my actual portfolio without major overhauls.
 
